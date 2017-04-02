@@ -1,0 +1,17 @@
+
+div.characters li span.name {
+	display: inline-block;
+	width: 100px;
+}
+div.edit {
+	background-color: #ccc;
+	padding: 5px;
+	position: absolute;
+	border-radius: 10px;
+	left: 270px;
+	top: 15px;
+}
+
+button.load {
+	margin-left: 25px;
+}

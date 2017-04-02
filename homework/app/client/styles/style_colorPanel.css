@@ -1,0 +1,40 @@
+.mainColor {
+	background-color: gray;
+	width: 100px;
+	height: 150px;
+}
+.button {
+	width: 200px;
+	height: 50px; 
+}
+.button_red, .mainColor_red {
+	background-color: #9d0c01;
+}
+.button_blue, .mainColor_blue {
+	background-color: #013268;
+}
+.button_green, .mainColor_green {
+	background-color: #7db876;
+}
+.button_yellow .mainColor_yellow {
+	background-color: yellow;
+}
+.button_133982, .mainColor_133982 {
+	background-color: #133982;
+}
+
+div#container {
+	width: 400px;
+	font-size: 0;
+	margin-top: 50px;
+}
+
+#container div.containerColors, div.mainColor, div.counters {
+	display: inline-block;
+}
+
+span.counter {
+	font-size: 35px;
+	display: block;
+	margin-left: 30px;
+}

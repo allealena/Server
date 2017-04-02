@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'FontAwesome';
+    src: url('FontAwesome.otf');
+}
+span.icon {
+	font: 20px 'FontAwesome';
+}
+div.countries{
+	width: 600px;
+}
+div.countries li span {
+	display: inline-block;
+	width: 115px;
+}
+div.countries li span.icon {
+	width: 50px;
+	cursor: pointer;
+}
+div.countries li span.name {
+	font-weight: bold;
+}
+.likeIt {
+	background-color: #b6f79a;
+}

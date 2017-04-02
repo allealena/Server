@@ -1,0 +1,54 @@
+body {
+	font-family: 'Andika', sans-serif;
+	color: #4f674c;
+}
+table {
+	background-color: #e7fde4;
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid #4f674c;
+	 padding: 5px;
+}
+th {
+	background-color: #7db876;
+}
+div#card, div#editForm {
+	position: absolute;
+	left: 500px;
+}
+div#card {
+	top: 8px;
+}
+
+div#editForm {
+    top: 110px;
+    background-color: #e9e5e5;
+    border-radius: 10px;
+    box-shadow: #505152 3px 3px;
+}
+div#editForm input {
+	border-radius: 5px;
+	padding: 3px;
+}
+
+div#editForm div.form {
+	margin: 10px;
+}
+
+div#editForm div.form label{
+	color: #505152;
+}
+
+div#card button {
+    position: absolute;
+    right: 0;
+    top: 85px;
+}
+button {
+	border-radius: 3px;
+}
+div#content {
+	border-radius: 5px;
+}
+

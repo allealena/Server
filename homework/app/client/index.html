@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="styles/studentsList.css">
+		<link href="https://fonts.googleapis.com/css?family=Andika&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="styles/style_colorPanel.css">
+		<link rel="stylesheet" href="styles/styleCounties.css">
+
+        <script src="scripts/libs/jquery-3.2.0.min.js"></script>
+        <script src="scripts/libs/underscore-min.js"></script>
+        <script src="scripts/libs/backbone-min.js"></script>
+		<script src="scripts/libs/Mediator.js"></script>		
+		<script src="scripts/libs/Observer.js"></script>		
+
+		<script src="scripts/ColorBlocks/models/ColorCounter.js"></script>
+		<script src="scripts/ColorBlocks/models/ColorPanel.js"></script>
+		
+		<script src="scripts/ColorBlocks/tpls/tplButton.js"></script>
+		<script src="scripts/ColorBlocks/tpls/tplCounter.js"></script>
+		<script src="scripts/ColorBlocks/tpls/renderTplColor.js"></script>
+		
+		<script src="scripts/ColorBlocks/view/ButtonView.js"></script>		
+		<script src="scripts/ColorBlocks/view/CounterView.js"></script>
+	    <script src="scripts/ColorBlocks/view/MainColorView.js"></script>
+		
+		<script src="scripts/ColorBlocks/ControllerColorBlock.js"></script>
+
+		<script src="scripts/StudentList/tpls/studentData.js"></script>
+		<script src="scripts/StudentList/models/Student.js"></script>
+		<script src="scripts/StudentList/models/StudentsList.js"></script>
+		
+		<script src="scripts/StudentList/tpls/tmplForm.js"></script>
+		<script src="scripts/StudentList/tpls/tmplFullForm.js"></script>
+		<script src="scripts/StudentList/tpls/tmplTableHeader.js"></script>
+		<script src="scripts/StudentList/tpls/tmplRowTable.js"></script>
+		<script src="scripts/StudentList/tpls/renderTpl.js"></script>
+		
+		<script src="scripts/StudentList/view/ListItemView.js"></script>
+	    <script src="scripts/StudentList/view/EditFormView.js"></script>
+		<script src="scripts/StudentList/view/TableView.js"></script>
+		<script src="scripts/StudentList/view/FullInfoView.js"></script>
+		
+		<script src="scripts/StudentList/ControllerStudentList.js"></script>
+
+	    <script src="scripts/Countries/models/Country.js"></script>
+	    <script src="scripts/Countries/models/Countries.js"></script>
+
+	    <script src="scripts/Countries/tpls/tplListItem.js"></script>
+	    <script src="scripts/Countries/tpls/tplNav.js"></script>
+	    <script src="scripts/Countries/tpls/tplCaption.js"></script>
+	    <script src="scripts/Countries/tpls/renderTplCountry.js"></script>
+
+	    <script src="scripts/Countries/view/ViewNavigation.js"></script>
+	    <script src="scripts/Countries/view/ViewCountryItem.js"></script>
+	    <script src="scripts/Countries/view/ViewCountries.js"></script>
+	    <script src="scripts/Countries/ControllerCountry.js"></script>
+		
+		<script src="scripts/main.js"></script>
+		<script src="scripts/getCountries.js"></script>
+
+	</head>
+	<body>
+	    <div id="studentList">
+		    <div id="content">
+		    </div>
+		    <div id="card">
+		    </div>
+		    <div id="editForm">
+		    </div>
+		</div>
+		<div id="container">
+		    <div class="containerColors">
+		    </div>
+		    <div class="mainColor">
+		    </div>
+		    <div class="counters">
+		    </div>
+		</div>
+		<div class="buttons">
+		</div>
+	    <div class="countries">  
+	    </div>
+	    <button name="countries">load</button>
+	<div class="countries_temp"></div>
+	</body>
+</html>
