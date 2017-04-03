@@ -11,14 +11,13 @@ var TableView = Backbone.View.extend({
     render: function () {
     	var header = tmplTableHeader();
     	this.$el.append(header);
+
         this.collection.forEach(this.renderItem, this);
         return this;
     },
 
     renderItem: function (student) {
-        var studentView = new ListItemView({
-            model: student
-        });
+        var studentView = new ListItemView({model: student});
         this.$el.append(studentView.render().el);
     }
 });

@@ -11,7 +11,7 @@ var ViewCountryItem = Backbone.View.extend({
 
     render: function () {
         var countryJSON = this.model.toJSON();
-        this.$el.html(this.template(countryJSON) );
+        this.$el.html(this.template(countryJSON));
 
         return this;
     },

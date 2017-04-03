@@ -10,14 +10,14 @@ var ViewCountries = Backbone.View.extend({
     render: function (continent) {
         this.$el.html('<h1>' + continent + '</h1>');
         var countries = this.collection.getCountries(continent);
-        console.log(countries);
 
-        countries.forEach(function (country) {
-            var countryView = new ViewCountryItem({model: country});
-            this.$el.append(countryView.render().el);
-        }, this);
-
+        countries.forEach(this.renderItem, this);
         return this;
+    },
+
+    renderItem: function (country) {
+        var countryView = new ViewCountryItem({model: country});
+        this.$el.append(countryView.render().el);
     }
 });
 
