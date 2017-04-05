@@ -1,7 +1,7 @@
 'use strict';
 var StudentsList = Backbone.Collection.extend({
 	model: Student,
-	url: './students'
+	url: '/students'
 }); 
 
 

@@ -12,7 +12,6 @@ var TableView = Backbone.View.extend({
     	var header = tmplTableHeader();
     	this.$el.append(header);
 
-        this.collection.forEach(this.renderItem, this);
         return this;
     },
 

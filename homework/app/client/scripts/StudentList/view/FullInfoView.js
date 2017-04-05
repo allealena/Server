@@ -9,7 +9,7 @@ var FullInfoView = Backbone.View.extend({
 	},
 
 	events: {
-		'click button.closeFullForm' : 'removeInfoStudent'
+		'click .closeFullForm' : 'removeInfoStudent'
 	},
 
 	removeInfoStudent: function () {

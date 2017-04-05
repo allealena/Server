@@ -1,5 +1,6 @@
 var Student = Backbone.Model.extend({
     defaults: {
+        id:'',
         name: '',
         surname: '',
         gender: '',

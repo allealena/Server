@@ -12,22 +12,25 @@ function getStudents () {
 }
 
 function removeCountry (id) {
-    countries.forEach(function (country, i) {
-       
-       if(id === country.id) {
-           countries.splice(i, 1);
-       }
-    })
+    var item = findId(countries, id);
+    countries.splice(item, 1);
 }
 
 function changeData (id, data) {
-    students.forEach(function (student, i) {
-    	
-    	if(id === student.id) {
-    		var studentData = JSON.parse(data);
-    		students.splice(i, 1, studentData);
-    	}
+    var item = findId(students, id),
+        studentData = JSON.parse(data);
+    
+    students.splice(item, 1, studentData);
+}
+
+function findId (collection, id) {
+    var findItem;
+    collection.forEach(function (item, i) {
+        if(id === item.id) {
+            findItem = i;
+        }
     })
+    return findItem;
 }
 
 exports.getCountries = getCountries;

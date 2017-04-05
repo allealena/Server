@@ -1,31 +1,38 @@
 'use strict';
 function ControllerStudentList () {
-    var group,
+    var buttonAdd = $('.addStudent'),
+        group,
         tableContent,
         studentFullInfo,
         studentEdit;
 
+    buttonAdd.on('click', addStudent);
     group = new StudentsList();
     tableContent = new TableView({collection: group});
     createTableContent();
+
+    function addStudent () {
+        var newStudent = new Student();
+        showEditStudent(newStudent);
+    }
     
     function createTableContent () {
-        var tableView = tableContent.render();
-        implement('table', tableView.el);
+        var tableView = tableContent.render().el;
+        implement('table', tableView);
     }
 
     function showInfoView (student) {
         var innerContainer;
         studentFullInfo = new FullInfoView({model: student});
-        innerContainer = studentFullInfo.render();
-        implement('fullInfo', innerContainer.el);
+        innerContainer = studentFullInfo.render().el;
+        implement('fullInfo', innerContainer);
     }
 
     function showEditStudent (student) {
         var editView;
         studentEdit = new EditFormView({model: student});
-        editView = studentEdit.render();
-        implement('editForm', editView.el);
+        editView = studentEdit.render().el;
+        implement('editForm', editView);
     }
 
     function implement (name, view) {

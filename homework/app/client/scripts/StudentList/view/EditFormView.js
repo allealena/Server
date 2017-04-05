@@ -4,13 +4,13 @@ var EditFormView = Backbone.View.extend({
     template: _.template(tmplForm()),
 
     render: function () {
-        this.$el.html( this.template(this.model.toJSON() ) );
+        this.$el.html(this.template(this.model.toJSON()));
         return this;
     },
 
     events: {
-        'click button.button_save' : 'saveChanges',
-        'click button.button_close' : 'hideEdit',
+        'click .button_save' : 'saveChanges',
+        'click .button_close' : 'hideEdit',
     },
 
     hideEdit: function () {
@@ -21,10 +21,11 @@ var EditFormView = Backbone.View.extend({
         var editData = {},
             property;
 
-        [].forEach.call($('input'), function (item) {
+        this.$('input').each(function (i, item) {
             property = item.name;           
             editData[property] = item.value;
         });
+        console.log(editData);
 
         this.model.save(editData);
         this.remove();

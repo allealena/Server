@@ -4,8 +4,8 @@ var ListItemView = Backbone.View.extend({
 	template: _.template(tmplRowTable()),
 
 	events: {
-		'click button.more': 'showInfoStudent',
-		'click button.edit': 'showEditForm'
+		'click .more': 'showInfoStudent',
+		'click .edit': 'showEditForm'
 	},
 
 	initialize: function () {

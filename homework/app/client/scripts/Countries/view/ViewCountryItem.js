@@ -17,7 +17,7 @@ var ViewCountryItem = Backbone.View.extend({
     },
     
     likeIt: function () {
-        this.el.classList.toggle('likeIt');
+        this.$el.toggleClass('likeIt');
     },
 
     dislikeIt: function () {

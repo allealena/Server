@@ -4,7 +4,7 @@ var ViewCountries = Backbone.View.extend({
 
     initialize: function () {
         this.collection.fetch();
-        this.collection.on('sync', this.render, this);
+        this.collection.on('add', this.render, this);
     },
 
     render: function (continent) {
